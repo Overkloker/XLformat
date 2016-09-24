@@ -1,0 +1,23 @@
+.title-mark {
+  position: relative;
+}
+.title-mark:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 38px;
+  left: -42px;
+  top: 14px;
+  background-color: #eeeeee;
+  z-index: 1;
+}
+.title-mark:after {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 7px;
+  left: -50px;
+  top: 29px;
+  background-color: #ff0000;
+  z-index: 2;
+}

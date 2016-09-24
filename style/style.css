@@ -1,0 +1,526 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans");
+  src: url("../font/OpenSans/OpenSans-SemiboldItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-BoldItal.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-LightItal.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-MedItal.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-ThinItal.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-XBlack.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-XBlackItal.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-XThin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TextCompPro";
+  src: local("TextCompPro");
+  src: url("../font/TextCompPro/PFDinTextCompPro-XThinItal.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+.title-mark {
+  position: relative;
+}
+.title-mark:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 38px;
+  left: -42px;
+  top: 14px;
+  background-color: #eeeeee;
+  z-index: 1;
+}
+.title-mark:after {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 7px;
+  left: -50px;
+  top: 29px;
+  background-color: #ff0000;
+  z-index: 2;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #444444;
+}
+.b-content {
+  width: 1170px;
+  margin: 0 auto;
+}
+.b-header-wrapper {
+  background-image: url("../img/Layer-22.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 278px;
+}
+.b-top-header-logo a {
+  display: block;
+  width: 131px;
+  margin-left: 23px;
+}
+.b-top-header-logo a img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.b-top-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+}
+.b-top-header-text {
+  margin-top: 18px;
+}
+.b-top-header-text span {
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+.b-top-header-phone {
+  padding: 16px 22px 0 0;
+}
+.b-top-header-phone span {
+  font-family: "TextCompPro";
+  display: block;
+  text-align: right;
+  position: relative;
+  font-size: 40px;
+  color: #ffffff;
+}
+.b-top-header-phone span:after {
+  content: '';
+  display: block;
+  background-image: url(../img/icon-sprite.png);
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: -43px;
+  top: 11px;
+}
+.b-top-header-phone a {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.b-get-free-icon:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-get-free-wrapper .e-title {
+  font-family: "TextCompPro";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+.b-get-free-wrapper .b-get-free {
+  list-style: none;
+  padding-left: 0;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 37px;
+  margin-bottom: 0;
+}
+.b-get-free-wrapper .b-get-free li {
+  padding-left: 44px;
+  line-height: 25px;
+  margin-top: 25px;
+  position: relative;
+}
+.b-get-free-wrapper .b-get-free li:first-child {
+  margin-top: 0;
+}
+.b-get-free-wrapper .b-get-free .i-print:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-get-free-wrapper .b-get-free .i-print:after {
+  width: 23px;
+  height: 23px;
+  background-position: -26px 0px;
+}
+.b-get-free-wrapper .b-get-free .i-pen:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-get-free-wrapper .b-get-free .i-pen:after {
+  width: 20px;
+  height: 20px;
+  background-position: -49px 0;
+}
+.b-get-free-wrapper .e-necessary {
+  font-family: "TextCompPro";
+  display: block;
+  color: #ffffff;
+  padding-left: 44px;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+}
+.b-get-free-wrapper .e-necessary:before {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  left: 6px;
+  bottom: -43px;
+  width: 8px;
+  height: 31px;
+  background-position: -88px 0;
+}
+.b-get-free-wrapper .i-mouse:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-get-free-wrapper .i-mouse:after {
+  width: 19px;
+  height: 28px;
+  background-position: -69px 0;
+}
+.m-get-free-wrapper__margin {
+  margin-top: 30px;
+}
+.b-consultation-request-wrapper {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 35.355px 35.355px 100px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 32px;
+  position: relative;
+  padding: 60px 72px;
+}
+.b-consultation-request-wrapper .e-title {
+  font-family: "TextCompPro";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 55px;
+  color: #ff0000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+.b-consultation-request-wrapper .e-description {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: #888888;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+.b-consultation-request-wrapper .e-input {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #f2f2f2;
+  display: block;
+  width: 100%;
+  line-height: 58px;
+  padding: 0 25px;
+}
+.b-consultation-request-wrapper .e-btn {
+  border-radius: 4px;
+  font-family: "TextCompPro";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 35px;
+  color: #ffffff;
+  background: #ff0000;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  bottom: -45px;
+  line-height: 85px;
+  text-transform: uppercase;
+  width: calc(100% - 144px);
+}
+.b-input-wrapp {
+  position: relative;
+  margin-bottom: 10px;
+}
+.b-input-wrapp.required:before {
+  content: '*';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 20px;
+  top: 21px;
+  font-size: 18px;
+  color: #ff0000;
+}
+.b-input-wrapp:last-child {
+  margin-bottom: 0;
+}
+.b-necessary-refer-wrapper {
+  padding: 107px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.b-necessary-refer-wrapper .e-title {
+  font-family: "TextCompPro";
+  font-weight: bold;
+  font-style: normal;
+  color: #444444;
+  font-size: 55px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 66px;
+}
+.b-necessary-refer-wrapper .e-btn {
+  font-family: "TextCompPro";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 14px;
+  line-height: 64px;
+  display: inline-block;
+  padding: 0 60px 0 40px;
+  position: relative;
+}
+.b-necessary-refer-wrapper .e-btn:before {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  right: 33px;
+  top: 28px;
+  width: 14px;
+  height: 8px;
+  background-position: -14px -28px;
+}
+.b-necessary-refer-lists-wrapper {
+  margin-top: 79px;
+}
+.b-necessary-refer-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.b-necessary-refer-list-wrapper:first-child {
+  margin-top: 0;
+}
+.b-necessary-refer-item {
+  padding-left: 90px;
+  position: relative;
+}
+.b-necessary-refer-item span {
+  max-width: 185px;
+  display: block;
+}
+.b-necessary-refer-item span:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.b-necessary-refer-item .i-hat:after {
+  width: 60px;
+  height: 39px;
+  background-position: -96px 0;
+}
+.b-necessary-refer-item .i-calendar:after {
+  width: 45px;
+  height: 46px;
+  background-position: -202px 0;
+}
+.b-necessary-refer-item .i-medal:after {
+  width: 39px;
+  height: 54px;
+  background-position: -289px 0;
+}
+.b-necessary-refer-item .i-board:after {
+  width: 46px;
+  height: 41px;
+  background-position: -156px 0;
+}
+.b-necessary-refer-item .i-protect:after {
+  width: 42px;
+  height: 52px;
+  background-position: -247px 0;
+}
+.b-necessary-refer-item .i-heart:after {
+  width: 51px;
+  height: 45px;
+  background-position: -328px 0;
+}

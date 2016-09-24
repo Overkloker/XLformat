@@ -1,0 +1,28 @@
+{
+  "name": "XLformat",
+  "homepage": "https://github.com/Overkloker",
+  "authors": [
+    "Lord <overkloker33@gmail.com>"
+  ],
+  "description": "landing",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "XLformat",
+    "landing.ua"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fotorama": "~4.6.4",
+    "jquery-ui": "~1.12.1",
+    "bootstrap": "~3.3.7"
+  }
+}

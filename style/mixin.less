@@ -1,0 +1,29 @@
+@c-gray: #444444;
+@c-gray-light: #888888;
+@c-white: #ffffff;
+@c-black: #000000;
+@c-red: #ff0000;
+
+.title-mark {
+	position: relative;
+	&:before {
+		position:         absolute;
+		content:          '';
+		width:            1px;
+		height:           38px;
+		left:             -42px;
+		top:              14px;
+		background-color: #eeeeee;
+		z-index:          1;
+	}
+	&:after {
+		position:         absolute;
+		content:          '';
+		width:            17px;
+		height:           7px;
+		left:             -50px;
+		top:              29px;
+		background-color: @c-red;
+		z-index:          2;
+	}
+}
