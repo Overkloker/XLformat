@@ -1,1 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea
+.idea/XLformat.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+bower_components/
