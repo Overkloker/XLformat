@@ -842,6 +842,85 @@
 
 //label 7 BLOCK
 
+.b-our-clients-wrapper {
+	padding: 110px 0;
+	.e-title {
+		font-size:      55px;
+		font-family:    "TextCompPro";
+		font-weight:    bold;
+		font-style:     normal;
+		text-transform: uppercase;
+		margin:         0;
+	}
+}
+
+.b-slick-wrapper {
+	margin-top: 87px;
+	position:   relative;
+	.b-item {
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+.slick-btn {
+	position:         absolute;
+	top:              -137px;
+	width:            80px;
+	height:           38px;
+	display:          block;
+	border-radius:    4px;
+	background-color: @c-white;
+	border:           2px solid @c-red;
+	&:before {
+		content:             '';
+		position:            absolute;
+		width:               14px;
+		height:              8px;
+		top:                 13px;
+		left:                31px;
+		background-image:    url("./../img/icon-sprite.png");
+		background-position: 0px -28px;
+	}
+	&:hover {
+		background-color: @c-red;
+		&:before {
+			background-image:    url("./../img/icon-sprite.png");
+			background-position: -14px -28px;
+		}
+	}
+}
+
+.b-slick-prev {
+	.slick-btn;
+	right: 90px;
+	&:hover {
+		transform: rotate(180deg);
+	}
+}
+
+.b-slick-next {
+	.slick-btn;
+	right:     0;
+	transform: rotate(180deg);
+	&:hover {
+		transform: rotate(0deg);
+	}
+}
+
+//----------------------------------------------------------------------------------------------------
+
+//label 8 BLOCK
+
+//----------------------------------------------------------------------------------------------------
+
+//label 9 BLOCK
+
+//----------------------------------------------------------------------------------------------------
+
+//label 10 BLOCK
+
 //style end
 
 @import "footer";
