@@ -530,6 +530,7 @@ body {
   background-image: url("../img/bg-2.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .b-we-print-wrapper .e-title {
   font-family: "TextCompPro";
@@ -798,6 +799,7 @@ body {
   background-image: url("../img/bg-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .b-cooperation-list-wrapper .e-title {
   font-family: "TextCompPro";
@@ -882,4 +884,54 @@ body {
   width: 61px;
   height: 38px;
   background-position: -318px -62px;
+}
+.b-action-wrapper {
+  padding: 106px 0;
+  background-image: url("../img/bg-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.b-action-wrapper .e-title {
+  font-size: 70px;
+  font-family: "TextCompPro";
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #ffffff;
+}
+.b-action-wrapper .e-description {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 36px;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 52px;
+  display: block;
+}
+.b-action-wrapper .e-btn {
+  font-size: 22px;
+  font-family: "TextCompPro";
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  line-height: 60px;
+  display: inline-block;
+  padding: 0 88px 0 64px;
+  position: relative;
+  text-decoration: none;
+}
+.b-action-wrapper .e-btn:before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/icon-sprite.png);
+  right: 52px;
+  top: 26px;
+  width: 14px;
+  height: 8px;
+  background-position: -14px -28px;
 }

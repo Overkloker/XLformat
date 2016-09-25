@@ -379,6 +379,7 @@
 	background-image:    url("./../img/bg-2.png");
 	background-repeat:   no-repeat;
 	background-position: center;
+	background-size:     cover;
 	.e-title {
 		font-family:    "TextCompPro";
 		font-weight:    bold;
@@ -677,6 +678,7 @@
 	background-image:    url("./../img/bg-3.jpg");
 	background-repeat:   no-repeat;
 	background-position: center;
+	background-size:     cover;
 }
 
 .b-cooperation-list-wrapper {
@@ -784,6 +786,57 @@
 //----------------------------------------------------------------------------------------------------
 
 //label 6 BLOCK
+
+.b-action-wrapper {
+	padding:             106px 0;
+	background-image:    url("./../img/bg-4.jpg");
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-size:     cover;
+	.e-title {
+		font-size:   70px;
+		font-family: "TextCompPro";
+		font-weight: bold;
+		font-style:  normal;
+		margin:      0;
+		color:       @c-white;
+	}
+	.e-description {
+		font-size:     24px;
+		font-weight:   300;
+		font-style:    normal;
+		line-height:   36px;
+		color:         @c-white;
+		margin-top:    12px;
+		margin-bottom: 52px;
+		display:       block;
+	}
+	.e-btn {
+		font-size:       22px;
+		font-family:     "TextCompPro";
+		font-weight:     500;
+		font-style:      normal;
+		color:           @c-white;
+		border:          1px solid @c-white;
+		text-transform:  uppercase;
+		border-radius:   4px;
+		line-height:     60px;
+		display:         inline-block;
+		padding:         0 88px 0 64px;
+		position:        relative;
+		text-decoration: none;
+		&:before {
+			content:             '';
+			position:            absolute;
+			background-image:    url(../img/icon-sprite.png);
+			right:               52px;
+			top:                 26px;
+			width:               14px;
+			height:              8px;
+			background-position: -14px -28px;
+		}
+	}
+}
 
 //----------------------------------------------------------------------------------------------------
 
