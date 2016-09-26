@@ -1540,3 +1540,89 @@ body {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+footer {
+  padding: 30px 0;
+}
+.b-footer-logo {
+  max-width: 102px;
+}
+.b-footer-logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.b-social-wrapper {
+  text-align: center;
+  font-size: 0;
+  margin-top: 27px;
+}
+.b-social-wrapper .b-network {
+  width: 54px;
+  height: 54px;
+  border: 3px solid #ff0000;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.b-social-wrapper .b-network:first-child {
+  margin-left: 0;
+}
+.b-social-wrapper .i-fb {
+  position: relative;
+}
+.b-social-wrapper .i-fb:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.b-social-wrapper .i-fb:after {
+  width: 9px;
+  height: 19px;
+  background-position: -386px -56px;
+  top: 14px;
+  left: 20px;
+}
+.b-social-wrapper .i-in {
+  position: relative;
+}
+.b-social-wrapper .i-in:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.b-social-wrapper .i-in:after {
+  width: 21px;
+  height: 21px;
+  background-position: -400px -56px;
+  top: 14px;
+  left: 14px;
+}
+.b-social-wrapper .i-yt {
+  position: relative;
+}
+.b-social-wrapper .i-yt:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.b-social-wrapper .i-yt:after {
+  width: 20px;
+  height: 24px;
+  background-position: -386px -77px;
+  top: 12px;
+  left: 15px;
+}
+.b-develop {
+  margin-top: 43px;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+.b-develop span {
+  color: #ff0000;
+}
