@@ -1397,6 +1397,62 @@
 
 //label 12 BLOCK
 
+.b-question-wrapper {
+	padding:             106px 0;
+	background-image:    url("./../img/bg-7.jpg");
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-size:     cover;
+	.e-title {
+		font-family:    "TextCompPro";
+		font-weight:    bold;
+		font-style:     normal;
+		font-size:      70px;
+		text-transform: uppercase;
+		margin:         0;
+		color:          @c-white;
+	}
+	.e-description {
+		font-weight: 300;
+		font-style:  normal;
+		font-size:   24px;
+		display:     block;
+		margin-top:  12px;
+		color:       @c-white;
+	}
+	.e-btn {
+		font-family:      "TextCompPro";
+		font-weight:      500;
+		font-style:       normal;
+		font-size:        22px;
+		color:            @c-red;
+		background-color: @c-white;
+		position:         relative;
+		border-radius:    4px;
+		display:          inline-block;
+		text-transform:   uppercase;
+		text-decoration:  none;
+		margin-top:       53px;
+		line-height:      64px;
+		padding:          0 100px 0 76px;
+		&:before {
+			content:             '';
+			background-image:    url("./../img/icon-sprite.png");
+			position:            absolute;
+			width:               14px;
+			height:              8px;
+			background-position: 0 121px;
+			top:                 28px;
+			right:               68px;
+			-webkit-transform:   rotate(180deg);
+			-moz-transform:      rotate(180deg);
+			-ms-transform:       rotate(180deg);
+			-o-transform:        rotate(180deg);
+			transform:           rotate(180deg);
+		}
+	}
+}
+
 //----------------------------------------------------------------------------------------------------
 
 //label 13 BLOCK
