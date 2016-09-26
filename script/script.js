@@ -5,9 +5,18 @@ $(document).ready(function () {
   $('.b-slick-wrapper').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    prevArrow:'<a href="" class="b-slick-prev"></a>',
-    nextArrow:'<a href="" class="b-slick-next"></a>',
+    prevArrow: '<a href="" class="b-slick-prev"></a>',
+    nextArrow: '<a href="" class="b-slick-next"></a>',
     autoplay: true,
     autoplaySpeed: 2000
+  });
+});
+
+
+$(document).ready(function () {
+  $(".e-faq-title").click(function () {
+    $(".b-faq-content").toggle("fast", function () {
+    });
+    $(this).toggleClass("active")
   });
 });
