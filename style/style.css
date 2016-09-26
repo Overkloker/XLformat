@@ -1344,3 +1344,144 @@ body {
 .b-faq-content ul {
   list-style: none;
 }
+.icon {
+  position: relative;
+}
+.icon:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.b-contact-wrapper {
+  display: flex;
+}
+.b-contact-left {
+  background-color: #f9f9f9;
+  float: left;
+  width: 45%;
+}
+.b-contact-left .e-title {
+  font-family: "TextCompPro";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 55px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.b-contact-left .e-address {
+  font-size: 18px;
+  line-height: 27px;
+  display: block;
+  color: #888888;
+  margin-top: 27px;
+  max-width: 300px;
+  padding-left: 45px;
+}
+.b-contact-left .e-mail {
+  font-size: 17px;
+  display: block;
+  color: #888888;
+  padding-left: 45px;
+  margin-top: 11px;
+}
+.b-contact-left .e-lines .line {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: #eeeeee;
+  left: 8px;
+}
+.b-contact-left .e-lines:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: #eeeeee;
+  left: 8px;
+  top: 4px;
+}
+.b-contact-left .e-lines:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: #eeeeee;
+  left: 8px;
+  bottom: 4px;
+}
+.b-contact-left .i-location {
+  position: relative;
+}
+.b-contact-left .i-location:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.b-contact-left .i-location:after {
+  width: 16px;
+  height: 21px;
+  background-position: 0px 76px;
+}
+.b-contact-left .i-phone {
+  position: relative;
+}
+.b-contact-left .i-phone:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.b-contact-left .i-phone:after {
+  width: 18px;
+  height: 18px;
+  background-position: -17px 73px;
+  top: 57px;
+}
+.b-contact-left .i-email {
+  position: relative;
+}
+.b-contact-left .i-email:after {
+  content: '';
+  background-image: url("../img/icon-sprite.png");
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.b-contact-left .i-email:after {
+  width: 18px;
+  height: 13px;
+  background-position: -38px 68px;
+}
+.b-phone-wrapper {
+  padding-left: 45px;
+  margin-top: 24px;
+  margin-bottom: 21px;
+  position: relative;
+}
+.b-phone-wrapper .e-phone {
+  font-weight: 300;
+  font-style: normal;
+  display: block;
+  font-size: 26px;
+  color: #000000;
+  margin-top: 11px;
+}
+.b-contact-left-wrapper {
+  width: 487px;
+  float: right;
+  padding: 109px 0;
+}
+.b-contact-right {
+  float: right;
+  width: 55%;
+}
+#map {
+  width: 100%;
+  height: 600px;
+}

@@ -704,11 +704,49 @@
     </div>
 </div>
 
+<!--label 11 BLOCK-->
+<div class="b-contact-wrapper clearfix">
+    <div class="b-contact-left">
+        <div class="b-contact-left-wrapper">
+            <h2 class="e-title title-mark">Наши контакты</h2>
+            
+            <span class="e-address i-location">01135, Киев, ул. Вячеслава Черновола 25, офис 221</span>
+            <div class="b-phone-wrapper i-phone">
+                <span class="e-phone">045 238 72 72</span>
+                <span class="e-phone">045 238 03 80</span>
+                <span class="e-phone">045 238 04 42</span>
+                <span class="e-lines"></span>
+            </div>
+            <span class="e-mail i-email">sale@greenwich.kiev.ua</span>
+            <span class="e-mail i-email">office@greenwich.kiev.ua</span>
+        </div>
+    </div>
+    <div class="b-contact-right">
+        <!--todo GOOGLE MAP-->
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 44.540, lng: -78.546},
+                    zoom: 8
+                });
+            }
+        </script>
+        <script async
+                defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRV8b86W11IV5ChehTN91Uidcwa2vWibk&callback=initMap">
+        </script>
+    </div>
+</div>
+
 <!--label SCRIPT-->
 <script src="./../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="./../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./../bower_components/fotorama/fotorama.js"></script>
 <script src="./../bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <script src="./../script/script.js"></script>
 </body>
 </html>
