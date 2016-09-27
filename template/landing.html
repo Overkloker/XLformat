@@ -24,6 +24,19 @@
 </head>
 <body>
 
+<button type="button"
+        class="btn btn-primary btn-lg"
+        data-toggle="modal"
+        data-target="#sliderModal-1">
+    Lau
+</button>
+<button type="button"
+        class="btn btn-primary btn-lg"
+        data-toggle="modal"
+        data-target="#usualModal-1">
+    Lorem ipsum dolor.
+</button>
+
 <!--label 1 BLOCK-->
 <header>
     <div class="b-header-wrapper">
@@ -88,7 +101,6 @@
                                         class="e-btn">Оставить
                                 </button>
                             </form>
-                        
                         </div>
                     </div>
                 </div>
@@ -912,6 +924,105 @@
     
     </div>
 </footer>
+
+<!--label SLIDER MODAL-->
+<div class="modal fade"
+     id="sliderModal-1"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="sliderModal">
+    <div class="modal-dialog b-modal-dialog"
+         role="document">
+        <div class="b-modal-wrapper">
+            <div class="b-modal-left">
+                <div class="fotorama"
+                     data-width="610"
+                     data-height="444"
+                     data-fit="cover"
+                     data-loop="true"
+                     data-keyboard="true">
+                    <img src="http://s.fotorama.io/1.jpg">
+                    <img src="http://s.fotorama.io/2.jpg">
+                </div>
+            </div>
+            <div class="b-modal-right">
+                <div class="b-consultation-request-wrapper m-consultation-request-wrapper__modal">
+                    <form action="">
+                        <h3 class="e-title">Оставьте заявку</h3>
+                        <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
+                        <div class="b-input-wrapp required">
+                            <input type="text"
+                                   required
+                                   placeholder="Ваше имя"
+                                   class="e-input">
+                        </div>
+                        <div class="b-input-wrapp required">
+                            <input type="text"
+                                   required
+                                   placeholder="Ваш телефон"
+                                   class="e-input">
+                        </div>
+                        <div class="b-input-wrapp">
+                            <input type="text"
+                                   placeholder="Ваш e-mail"
+                                   class="e-input">
+                        </div>
+                        
+                        <button type="submit"
+                                class="e-btn">Оставить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <a type="button"
+               class="b-modal-close"
+               data-dismiss="modal"></a>
+        </div>
+    </div>
+</div>
+
+<!--label USUAL MODAL-->
+<div class="modal fade"
+     id="usualModal-1"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="usualModal">
+    <div class="modal-dialog b-modal-dialog-usual"
+         role="document">
+        <div class="b-modal-usual-wrapper">
+            <div class="b-consultation-request-wrapper m-consultation-request-wrapper__margin-none">
+                <form action="">
+                    <h3 class="e-title">Оставьте заявку</h3>
+                    <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
+                    <div class="b-input-wrapp required">
+                        <input type="text"
+                               required
+                               placeholder="Ваше имя"
+                               class="e-input">
+                    </div>
+                    <div class="b-input-wrapp required">
+                        <input type="text"
+                               required
+                               placeholder="Ваш телефон"
+                               class="e-input">
+                    </div>
+                    <div class="b-input-wrapp">
+                        <input type="text"
+                               placeholder="Ваш e-mail"
+                               class="e-input">
+                    </div>
+                    
+                    <button type="submit"
+                            class="e-btn">Оставить
+                    </button>
+                </form>
+            </div>
+            <a type="button"
+               class="b-modal-close b-modal-usual-close"
+               data-dismiss="modal"></a>
+        </div>
+    </div>
+</div>
 
 <!--label SCRIPT-->
 <script src="./../bower_components/jquery/dist/jquery.min.js"></script>

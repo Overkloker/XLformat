@@ -1944,3 +1944,74 @@ footer:before {
   text-transform: uppercase;
   text-decoration: underline;
 }
+.b-modal-wrapper {
+  width: 1046px;
+  height: 448px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  position: relative;
+}
+.b-modal-dialog {
+  width: 1046px;
+}
+.b-modal-dialog-usual {
+  width: 475px;
+}
+.b-modal-right {
+  position: absolute;
+  top: -10px;
+  right: -2px;
+}
+.m-consultation-request-wrapper__modal {
+  margin: 0;
+  padding: 60px 56px;
+}
+.m-consultation-request-wrapper__modal .e-btn {
+  width: calc(100% - 112px);
+}
+.m-consultation-request-wrapper__margin-none {
+  margin: 0;
+}
+.b-modal-close {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: block;
+  bottom: -140px;
+  right: 200px;
+  cursor: pointer;
+}
+.b-modal-close .btn {
+  content: '';
+  width: 3px;
+  height: 26px;
+  background-color: #666666;
+  position: absolute;
+  left: 7px;
+  top: -4px;
+}
+.b-modal-close:after {
+  content: '';
+  width: 3px;
+  height: 26px;
+  background-color: #666666;
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  transform: rotate(-45deg);
+}
+.b-modal-close:before {
+  content: '';
+  width: 3px;
+  height: 26px;
+  background-color: #666666;
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  transform: rotate(45deg);
+}
+.b-modal-usual-close {
+  bottom: -100px;
+  right: 228px;
+}
