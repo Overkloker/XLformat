@@ -70,29 +70,38 @@
                                 Все наши клиенты получают бесплатно
                             </span>
                         </div>
+                        <div class="b-thank-you">
+                            <span class="e-title">Спасибо!</span>
+                            <span class="e-description">Мы свяжемся с вами в ближайшее время</span>
+                            <span id="home"
+                                  class="e-home i-mouse">
+                                На главную
+                            </span>
+                        </div>
                     </div>
                     
                     <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-5 col-sm-5 col-md-5 col-lg-5">
                         <div class="b-consultation-request-wrapper">
-                            <form action="">
+                            <form id="form1"
+                                  onsubmit="sendForm('form1','form1', true)">
                                 <h3 class="e-title">Оставьте заявку</h3>
                                 <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
                                 <div class="b-input-wrapp required">
                                     <input type="text"
-                                           required
                                            placeholder="Ваше имя"
+                                           name="name"
                                            class="e-input">
                                 </div>
                                 <div class="b-input-wrapp required">
                                     <input type="text"
-                                           required
                                            placeholder="Ваш телефон"
+                                           name="phone"
                                            class="e-input phone">
                                 </div>
                                 <div class="b-input-wrapp required">
                                     <input type="email"
-                                           required
                                            placeholder="Ваш e-mail"
+                                           name="email"
                                            class="e-input">
                                 </div>
                                 
@@ -448,7 +457,9 @@
                                                                                предложение</span></span>
                             
                             <a href=""
-                               class="e-btn">Оставить
+                               class="e-btn"
+                               data-toggle="modal"
+                               data-target="#usualModal-1">Оставить
                             </a>
                         </div>
                     </div>
@@ -520,7 +531,9 @@
                                                                                предложение</span></span>
                             
                             <a href=""
-                               class="e-btn">Оставить
+                               class="e-btn"
+                               data-toggle="modal"
+                               data-target="#usualModal-1">Оставить
                             </a>
                         </div>
                     </div>
@@ -680,8 +693,7 @@
         <h2 class="e-title title-mark">Рассчитайте стоимость Вашего заказа</h2>
         <span class="e-description">Введите данные, и мы пришлём Вам точную смету</span>
         
-        <form action=""
-              class="clearfix">
+        <form class="clearfix">
             <div class="b-calculation-left wow wobble">
                 <div class="b-input-wrapp">
                     <input type="text"
@@ -783,7 +795,7 @@
                     <input type="email"
                            required
                            placeholder="Ваш e-mail"
-                           class="e-input error">
+                           class="e-input">
                 </div>
                 
                 <button type="submit"
@@ -956,24 +968,26 @@
             </div>
             <div class="b-modal-right">
                 <div class="b-consultation-request-wrapper m-consultation-request-wrapper__modal">
-                    <form action="">
+                    <form id="form2"
+                          onsubmit="sendForm('form2','form2', false)">
                         <h3 class="e-title">Оставьте заявку</h3>
                         <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
                         <div class="b-input-wrapp required">
                             <input type="text"
-                                   required
                                    placeholder="Ваше имя"
+                                   name="name"
                                    class="e-input">
                         </div>
                         <div class="b-input-wrapp required">
                             <input type="text"
-                                   required
                                    placeholder="Ваш телефон"
+                                   name="phone"
                                    class="e-input phone">
                         </div>
                         <div class="b-input-wrapp">
                             <input type="email"
                                    placeholder="Ваш e-mail"
+                                   name="email"
                                    class="e-input">
                         </div>
                         
@@ -1000,24 +1014,26 @@
          role="document">
         <div class="b-modal-usual-wrapper">
             <div class="b-consultation-request-wrapper m-consultation-request-wrapper__margin-none">
-                <form action="">
+                <form id="form3"
+                      onsubmit="sendForm('form3','form3', false)">
                     <h3 class="e-title">Оставьте заявку</h3>
                     <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
                     <div class="b-input-wrapp required">
                         <input type="text"
-                               required
                                placeholder="Ваше имя"
+                               name="name"
                                class="e-input">
                     </div>
                     <div class="b-input-wrapp required">
                         <input type="text"
-                               required
                                placeholder="Ваш телефон"
+                               name="phone"
                                class="e-input phone">
                     </div>
                     <div class="b-input-wrapp">
                         <input type="email"
                                placeholder="Ваш e-mail"
+                               name="email"
                                class="e-input">
                     </div>
                     
@@ -1043,24 +1059,26 @@
          role="document">
         <div class="b-modal-usual-wrapper">
             <div class="b-consultation-request-wrapper m-consultation-request-wrapper__margin-none">
-                <form action="">
+                <form id="form4"
+                      onsubmit="sendForm('form4','form4', false)">
                     <h3 class="e-title">Оставьте заявку</h3>
                     <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
                     <div class="b-input-wrapp required">
                         <input type="text"
-                               required
                                placeholder="Ваше имя"
+                               name="name"
                                class="e-input">
                     </div>
                     <div class="b-input-wrapp required">
                         <input type="text"
-                               required
                                placeholder="Ваш телефон"
+                               name="phone"
                                class="e-input phone">
                     </div>
                     <div class="b-input-wrapp">
                         <input type="email"
                                placeholder="Ваш e-mail"
+                               name="email"
                                class="e-input">
                     </div>
                     
@@ -1086,24 +1104,26 @@
          role="document">
         <div class="b-modal-usual-wrapper">
             <div class="b-consultation-request-wrapper m-consultation-request-wrapper__margin-none">
-                <form action="">
+                <form id="form5"
+                      onsubmit="sendForm('form5','form5', false)">
                     <h3 class="e-title">Оставьте заявку</h3>
                     <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
                     <div class="b-input-wrapp required">
                         <input type="text"
-                               required
                                placeholder="Ваше имя"
+                               name="name"
                                class="e-input">
                     </div>
                     <div class="b-input-wrapp required">
                         <input type="text"
-                               required
                                placeholder="Ваш телефон"
+                               name="phone"
                                class="e-input phone">
                     </div>
                     <div class="b-input-wrapp">
                         <input type="email"
                                placeholder="Ваш e-mail"
+                               name="email"
                                class="e-input">
                     </div>
                     
