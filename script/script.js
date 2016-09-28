@@ -2,10 +2,9 @@
  * Created by Frank on 24.09.2016.
  */
 //label scroll DISABLE
-// document.getElementById('necessary').onclick = function () {
-  // enableScroll();
-  // showBlockUTP();
-// };
+document.getElementById('necessary').onclick = function () {
+  scrollDisableEffect();
+};
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
@@ -41,32 +40,41 @@ function enableScroll() {
   document.onkeydown = null;
 }
 
-// заблокировать скролл
-// disableScroll();
-window.scrollBy(0, 1);
-
 // label SCROLL EFFECT
+var scrollDisableEffect = function (scroll, bool) {
+  var scrolling = function () {
+    ok = false;
+    console.log(scroll);
+    if (scroll > 65) {
+
+      $('html, body').animate({
+        scrollTop: 200
+      }, 1000);
+    }
+
+    disableScroll();
+    showBlockUTP();
+    setTimeout(function () {
+      enableScroll();
+    }, 3000)
+  };
+
+  if (bool) {
+    if (ok) {
+      if (scroll > 50) {
+        scrolling();
+      }
+    }
+  } else {
+    scrolling();
+  }
+
+};
 var scrollDoc;
 var ok = true;
 $(window).on('scroll', function () {
   scrollDoc = $(window).scrollTop();
-  if (ok) {
-    if (scrollDoc > 50) {
-      ok = false;
-      disableScroll();
-      showBlockUTP();
-      console.log('disable');
-      setTimeout(function () {
-        console.log('enable');
-        enableScroll();
-      }, 3000)
-    }
-  }
-
-  if (scrollDoc > 0) {
-    // $('.b-get-free-wrapper1').addClass('hide-block-utp');
-    // enableScroll();
-  }
+  scrollDisableEffect(scrollDoc, true);
 });
 
 var showBlockUTP = function () {
@@ -129,7 +137,7 @@ $(document).ready(function () {
 
 //----------------------------------------------------------------------------------------------------
 
-var sendForm = function (id, from, require) {
+var sendForm = function (id, from, require, bool) {
   event.preventDefault();
   var name = $("#" + id).find("input[name='name']").val();
   var phone = $('#' + id).find("input[name='phone']").val();
@@ -151,7 +159,6 @@ var sendForm = function (id, from, require) {
     }
   }
 
-
   if (phone != "") {
     $('#' + id).find("input[name='phone']").removeClass('error')
   }
@@ -166,6 +173,21 @@ var sendForm = function (id, from, require) {
     from: from
   };
 
+  if (bool) {
+    var data = {
+      material: $("#material").val(),
+      width: $("#width").val(),
+      height: $("#height").val(),
+      count: $("#count").val(),
+      eyelets: $("#eyelets").val(),
+      check1: $("#check-1").is(':checked'),
+      check2: $("#check-2").is(':checked'),
+      check3: $("#check-3").is(':checked'),
+      check4: $("#check-4").is(':checked')
+    };
+    sendData = Object.assign(data, sendData)
+  }
+
   if (phone != "" && name != "" && email != "")
     $.ajax({
       type: "POST",
@@ -173,14 +195,8 @@ var sendForm = function (id, from, require) {
       data: sendData,
       success: function () {
         window.location = "thank.html";
-        // $('.b-thank-you').addClass('show-thank-you');
         $('.b-get-free-wrapper1').addClass('hide-block-utp');
         $('.b-get-free-wrapper2').addClass('hide-block-utp');
-        // $('.b-consultation-request-wrapper').addClass('hide-block-utp');
-
-        // $('html, body').animate({
-        //   scrollTop: $("body").offset().top
-        // }, 1000);
       }
     });
 };

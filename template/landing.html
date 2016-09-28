@@ -705,36 +705,43 @@
         <h2 class="e-title title-mark">Рассчитайте стоимость Вашего заказа</h2>
         <span class="e-description">Введите данные, и мы пришлём Вам точную смету</span>
         
-        <form class="clearfix">
+        <form id="calcForm"
+              class="clearfix"
+              onsubmit="sendForm('calcForm','calcForm', false, true)">
             <div class="b-calculation-left wow wobble">
                 <div class="b-input-wrapp">
                     <input type="text"
                            required
                            placeholder="Материал( винил, оракал, холст )"
+                           id="material"
                            class="e-input">
                 </div>
                 <div class="b-input-wrapp">
-                    <input type="text"
+                    <input type="number"
                            required
                            placeholder="Ширина ( см. )"
+                           id="width"
                            class="e-input">
                 </div>
                 <div class="b-input-wrapp">
-                    <input type="text"
+                    <input type="number"
                            required
                            placeholder="Высота( см. )"
+                           id="height"
                            class="e-input">
                 </div>
                 <div class="b-input-wrapp">
-                    <input type="text"
+                    <input type="number"
                            required
                            placeholder="Количество тиража ( шт. )"
+                           id="count"
                            class="e-input">
                 </div>
                 <div class="b-input-wrapp">
-                    <input type="text"
+                    <input type="number"
                            required
                            placeholder="Люверсы   ( шт. )"
+                           id="eyelets"
                            class="e-input">
                 </div>
             </div>
@@ -793,19 +800,19 @@
                 <h4 class="e-title">заполните форму заявки</h4>
                 <div class="b-input-wrapp required">
                     <input type="text"
-                           required
+                           name="name"
                            placeholder="Ваше имя"
                            class="e-input">
                 </div>
                 <div class="b-input-wrapp required">
                     <input type="text"
-                           required
+                           name="phone"
                            placeholder="Ваш телефон"
                            class="e-input phone">
                 </div>
                 <div class="b-input-wrapp required">
                     <input type="email"
-                           required
+                           name="email"
                            placeholder="Ваш e-mail"
                            class="e-input">
                 </div>
