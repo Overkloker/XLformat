@@ -195,8 +195,6 @@ var sendForm = function (id, from, require, bool) {
       data: sendData,
       success: function () {
         window.location = "thank.html";
-        $('.b-get-free-wrapper1').addClass('hide-block-utp');
-        $('.b-get-free-wrapper2').addClass('hide-block-utp');
       }
     });
 };
