@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Thank you</title>
+    <link rel="stylesheet"
+          href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="./../style/style.css">
+</head>
+<body>
+
+<div class="b-header-wrapper b-thank-wrapper">
+    <div class="b-top-header">
+        <div class="b-top-header-logo">
+            <a href="#"></a>
+        </div>
+        <div class="b-top-header-text">
+            <span>ШИРОКОФОРМАТНАЯ ПЕЧАТЬ</span>
+            <span>КАЧЕСТВЕННО И В СРОК ПО РАЗУМНОЙ ЦЕНЕ</span>
+        </div>
+        <div class="b-top-header-phone">
+            <span>044 238 72 72</span>
+            <a href=""
+               data-toggle="modal"
+               data-target="#usualModal-1">Вам перезвонить?
+            </a>
+        </div>
+    </div>
+    <div class="b-bottom-header">
+        <div class="b-content">
+            <div class="row m-get-free-wrapper__margin">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="b-thank-you">
+                        <span class="e-title">Спасибо!</span>
+                        <span class="e-description">Мы свяжемся с вами в ближайшее время</span>
+                        <span id="home"
+                              class="e-home i-mouse">
+                            На главную
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--label USUAL MODAL 1-->
+<div class="modal fade"
+     id="usualModal-1"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="usualModal-1">
+    <div class="modal-dialog b-modal-dialog-usual"
+         role="document">
+        <div class="mod-center">
+            <div class="b-modal-usual-wrapper">
+                <div class="b-consultation-request-wrapper m-consultation-request-wrapper__margin-none">
+                    <form id="form3"
+                          onsubmit="sendForm('form3','form3', false)">
+                        <h3 class="e-title">Оставьте заявку</h3>
+                        <span class="e-description">на бесплатную консультацию и выезд специалиста</span>
+                        <div class="b-input-wrapp required">
+                            <input type="text"
+                                   placeholder="Ваше имя"
+                                   name="name"
+                                   class="e-input">
+                        </div>
+                        <div class="b-input-wrapp required">
+                            <input type="text"
+                                   placeholder="Ваш телефон"
+                                   name="phone"
+                                   class="e-input phone">
+                        </div>
+                        <div class="b-input-wrapp">
+                            <input type="email"
+                                   placeholder="Ваш e-mail"
+                                   name="email"
+                                   class="e-input">
+                        </div>
+                        
+                        <button type="submit"
+                                class="e-btn">Оставить
+                        </button>
+                    </form>
+                </div>
+                <a type="button"
+                   class="b-modal-close b-modal-usual-close"
+                   data-dismiss="modal"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--label SCRIPT-->
+<script src="./../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+<script src="./../script/thank.js"></script>
+</body>
+</html>

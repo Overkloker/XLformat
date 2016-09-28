@@ -2,10 +2,10 @@
  * Created by Frank on 24.09.2016.
  */
 //label scroll DISABLE
-document.getElementById('necessary').onclick = function () {
-  enableScroll();
-  showBlockUTP();
-};
+// document.getElementById('necessary').onclick = function () {
+  // enableScroll();
+  // showBlockUTP();
+// };
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
@@ -47,13 +47,22 @@ window.scrollBy(0, 1);
 
 // label SCROLL EFFECT
 var scrollDoc;
-$('document').on('scroll', function () {
-  // console.log('d');
-
+var ok = true;
+$(window).on('scroll', function () {
   scrollDoc = $(window).scrollTop();
-  if (scrollDoc > 1) {
-    // disableScroll();
+  if (ok) {
+    if (scrollDoc > 50) {
+      ok = false;
+      disableScroll();
+      showBlockUTP();
+      console.log('disable');
+      setTimeout(function () {
+        console.log('enable');
+        enableScroll();
+      }, 3000)
+    }
   }
+
   if (scrollDoc > 0) {
     // $('.b-get-free-wrapper1').addClass('hide-block-utp');
     // enableScroll();
@@ -160,13 +169,14 @@ var sendForm = function (id, from, require) {
   if (phone != "" && name != "" && email != "")
     $.ajax({
       type: "POST",
-      url: '/script/mail.php',
+      url: '/XLformat/script/mail.php',
       data: sendData,
       success: function () {
-        $('.b-thank-you').addClass('show-thank-you');
+        window.location = "thank.html";
+        // $('.b-thank-you').addClass('show-thank-you');
         $('.b-get-free-wrapper1').addClass('hide-block-utp');
         $('.b-get-free-wrapper2').addClass('hide-block-utp');
-        $('.b-consultation-request-wrapper').addClass('hide-block-utp');
+        // $('.b-consultation-request-wrapper').addClass('hide-block-utp');
 
         // $('html, body').animate({
         //   scrollTop: $("body").offset().top
