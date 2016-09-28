@@ -1,5 +1,5 @@
 <?php
-$recepient = "overkloker@ukr.net";
+$recepient = "email@gmail.net";
 $sitename = "XLformat";
 
 $name = (isset($_POST['name'])) ? $_POST['name'] : '';
