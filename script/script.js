@@ -42,7 +42,7 @@ function enableScroll() {
 }
 
 // заблокировать скролл
-disableScroll();
+// disableScroll();
 window.scrollBy(0, 1);
 
 // label SCROLL EFFECT
@@ -94,11 +94,14 @@ jQuery(function ($) {
 
 $(document).ready(function () {
   //label accordion FAQ
-  $(".e-faq-title").click(function () {
-    $(this).next().slideToggle();
-    $(this).toggleClass("active")
+  $('.acc').accordion({
+    transitionSpeed: 300,
+    transitionEasing: 'ease',
+    controlElement: '[data-control]',
+    contentElement: '[data-content]',
+    groupElement: '[data-accordion-group]',
+    singleOpen: true
   });
-
 
   //label show header
   $(document).on('scroll', function () {
@@ -164,6 +167,10 @@ var sendForm = function (id, from, require) {
         $('.b-get-free-wrapper1').addClass('hide-block-utp');
         $('.b-get-free-wrapper2').addClass('hide-block-utp');
         $('.b-consultation-request-wrapper').addClass('hide-block-utp');
+
+        // $('html, body').animate({
+        //   scrollTop: $("body").offset().top
+        // }, 1000);
       }
     });
 };
