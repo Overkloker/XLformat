@@ -1,0 +1,14 @@
+{
+  "name": "jquery-accordion",
+  "homepage": "https://github.com/vctrfrnndz/jquery-accordion",
+  "_release": "5fd92cf2cd",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5fd92cf2cda90d1b1e30aa46f2489100c0edde21"
+  },
+  "_source": "https://github.com/vctrfrnndz/jquery-accordion.git",
+  "_target": "*",
+  "_originalSource": "jquery-accordion",
+  "_direct": true
+}

@@ -3,7 +3,7 @@
  */
 $(document).ready(function () {
   $('#home').click(function () {
-    window.location = "landing.html"
+    window.location = "index.html"
   });
 });
 
